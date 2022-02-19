@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet</title>
+    <style>
+.tweet{
+    font-size: 2rem;
+}
+textarea{
+    font-family: Verdana;
+}
+.counter{
+    font-size: 2rem;
+}
+
+    </style>
+</head>
+<body>
+<textarea 
+class="tweet"
+ rows="10" 
+ cols="20" 
+ placeholder="What's happening"
+maxlength="20"
+ oninput="count(event)"
+ 
+ 
+ >
+</textarea>
+<span class="counter">0/20</span>
+
+
+<!-- we need to capture the typing event, as we write, counter should increse -->
+<!-- onkeypress,onkeyup,oninput -->
+<!--  listening for typing event using oninput,we can pass event in count-->
+
+
+    <script src="tweet.js"></script>
+</body>
+</html>
